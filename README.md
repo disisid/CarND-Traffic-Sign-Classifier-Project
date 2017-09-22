@@ -1080,7 +1080,12 @@ print(my_images_normalized.shape)
 
 Selected 8 Images and loaded them 
 
-
+The output could be widely affected by various parameters of dataset images:
+   1.The Contrast of the image - Shades, Contrasts, Images taken in sunny day or a rainy day etc might affect lighting conditions
+      2.The Angle of the traffic sign. - Yes it can definitely affect the Nural networks understanding. We tried using augmentation with slightly tilted, roatated and warped images to counter this. 
+      3.Image might be jittered - Just like the example in review shows, the presence of snow or noise can affect the outcome 
+      4.The training data set does not include this traffic sign. - A new sign will cause the neural network to wrongly guess to its closest match. 
+      5.Background Objects. - Background Objects can cause the sign to camouflage. For e.g. a red sign can be affected by a red car in the background.
 ### Predict the Sign Type for Each Image
 
 
