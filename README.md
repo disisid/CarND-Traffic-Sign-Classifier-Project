@@ -144,6 +144,15 @@ Here I have first tried out with the original LeNet implementaion as discussed i
 
 Pre Processing invlolved converting rgb to grayscale and then normalising the image. The dataset was augmented using the random_translate, random_scale, random_warp, and random_brightness functions implemented below
 
+
+First the image is coverted to grayscale. This is done to improve errors that might creep in due to different lighting conditions, shades etc. COnverting to grayscale helps minimise these errors. 
+
+Then data augmentation techniques are used to increase the dataset size. Improving dataset size helps generate more and varied cases that might be encountered later in the test data set. It helps prevent underfitting and further helps in imporving the neural network's scope. 
+
+Normalisation is to help improve learning rate and help locate the minimum quickly as compared to randonly starting off in a datset. Normalisation brings our dataset to a fixed range. 
+
+
+
 ```python
 ### Preprocess the data here. It is required to normalize the data. Other preprocessing steps could include 
 ### converting to grayscale, etc.
@@ -522,6 +531,9 @@ plt.show()
 
 
 ### Model Architecture
+
+The model I am trying to use is a modified LeNet as discussed in the paper shared in the class (http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) 
+
 
 
 ```python
