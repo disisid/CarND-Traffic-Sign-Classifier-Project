@@ -534,7 +534,9 @@ plt.show()
 
 The model I am trying to use is a modified LeNet as discussed in the paper shared in the class (http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) 
 
+![alt text](https://github.com/disisid/CarND-Traffic-Sign-Classifier-Project/blob/master/0-7XUKZNkItXa7OFkV.jpeg)
 
+Tried implementing this architecture keeping it close to LeNet and tuning the hyperparameters. I didn't experiment on optimisers and went with the adamoptimiser. Tried Relu for activation. My Mentor suggested to try 'Elu'. Tried that didn't help much so went back to relu.
 
 ```python
 from sklearn.utils import shuffle
